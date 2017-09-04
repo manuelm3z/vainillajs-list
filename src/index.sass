@@ -1,0 +1,95 @@
+#app
+    margin: 0 auto
+    max-width: 800px
+    font-family: monospace;
+form
+    border: 1px solid #c1bdbd
+    padding: 5px
+.inputs
+    display: flex
+    min-height: 185px
+    margin-bottom: 10px
+    justify-content: space-between
+    .image
+        display: flex
+        flex-direction: column
+        max-width: 157px
+        .image-container
+            img
+                width: 100%
+    .text
+        flex-grow: 1
+        margin-left: 10px
+        position: relative
+        label
+            font-weight: 700    
+        textarea
+            height: 133px
+            width: 99%
+        span
+            right: 0
+            position: absolute
+.botom
+    display: flex
+    .buttons, .counter
+        flex-grow: 1
+    .counter
+        text-align: center
+        span
+            font-size: 24px
+            font-weight: 700
+ul
+    list-style: none
+    padding-left: 0px
+    li
+        display: flex
+        flex-flow: row wrap
+        border-bottom: 1px solid grey
+        transition: all 0.3s
+        div
+            flex: 0 0 490px
+            p
+                padding-left: 15px
+            img
+                width: 100%
+            &.buttons
+                padding: 46px 0px
+                box-sizing: content-box
+                flex: 0 0 150px
+                button
+                    visibility: hidden
+                    display: block
+                    margin-left: auto
+                    margin-right: auto
+                button.small.edit
+                    margin-bottom: 2px
+            &.image
+                flex: 0 0 150px
+                text-align: center
+        &:hover
+            box-shadow: 2px 2px 17px 0px black
+            div.buttons
+                button
+                    visibility: visible
+button
+    border-radius: 3px
+    color: #fff !important
+    cursor: pointer
+    text-transform: uppercase
+    padding: 8px 14px 8px 14px
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.5)
+    display: inline-block
+    margin: 10px 5px 10px 2px
+    &.save
+        background: #82BF56
+        border-color: #82BF56
+    &.edit
+        background: #3498DB
+        border-color: #3498DB
+    &.delete
+        background: #E74C3C
+        border-color: #E74C3C
+    &.small
+        font-size: 11px
+        padding: 4px 7px 4px 7px
+        margin: 0px
